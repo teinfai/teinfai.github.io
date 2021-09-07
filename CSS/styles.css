@@ -1,0 +1,24 @@
+p {
+    color: gold;
+}
+
+a[href*="google"] {
+    color: orange;
+}
+
+#product  p {
+    color:green;
+}
+
+article p:last-child {
+    font-size: 140%;
+    font-style:italic;
+}
+
+a:visited, a:link{
+    color:dodgerblue;
+}
+
+a:hover {
+    color: deeppink;
+}
