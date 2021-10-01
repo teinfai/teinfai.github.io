@@ -3,14 +3,14 @@ function transformUppercase(_val){
 }
 
 // DOM event listener
-let elNamaPengguna = document.getElementById("namaPengguna")
-elNamaPengguna.addEventListener("keyup",function(){
-    elNamaPengguna.value = transformUppercase(elNamaPengguna.value)
+let jsusername = document.getElementById("namaPengguna")
+jsusername.addEventListener("keyup",function(){
+    jsusername.value = transformUppercase(jsusername.value)
 })
 
 function checkPassword(){
-    let elKataLaluan = document.getElementById("kataLaluan")
-    let pass_val = elKataLaluan.value
+    let userpassword = document.getElementById("kataLaluan")
+    let pass_val = userpassword.value
 
     if(pass_val.length > 5){
         alert("Password check...OK!")
