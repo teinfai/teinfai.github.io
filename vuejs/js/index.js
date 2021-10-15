@@ -47,7 +47,43 @@ let app4 = new Vue ({
 let app5 = new Vue ({
     el:"#app5",
     data: {
-        mes: "kfc"
+        mes: "kfc",
+        groceryList: [
+            {
+                id:1,
+                desc:"Rocket Salad"
+            },
+            {
+                id:2,
+                desc:"kfc"
+            },
+            {
+                id:3,
+                desc:"mcd"
+            },
+            {
+                id:4,
+                desc:"pizza"
+            }
+        ],
+        orderList: [
+            {
+                id:1,
+                desc:"nasi lemak"
+            },
+            {
+                id:2,
+                desc:"nasi kerabu"
+            },
+            {
+                id:3,
+                desc:"nasi babi"
+            },
+            {
+                id:4,
+                desc:"nasi lembu"
+            }
+        ]
     }
 })
 
