@@ -8,15 +8,15 @@ function validatePalin(str) {
   
         // validate the first and last characters are same  
         if (string[i] !== string[len - 1 - i]) {  
-            alert( 'It is not a palindrome');  
+            return document.getElementById("demo").innerHTML='It is not a palindrome'  
         }  
     }  
-    alert( 'It is a palindrome');  
+    return document.getElementById("demo").innerHTML='It is a palindrome'  
 }  
   
 // accept the string or number from the prompt  
-const string = prompt('Enter a string or number: ');  
+const string = prompt('Enter a string');  
   
 const value = validatePalin(string);  
   
-console.log(value);  
+console.log(value);
