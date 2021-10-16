@@ -1,16 +1,32 @@
-let elLocate = document.getElementById("btnLocate")
-elLocate.addEventListener("click",function(){
-    
-    var a = document.getElementById("demo1");
-    var b = document.getElementById("demo2");
+let ellocate = document.getElementById("btnlocate")
+ellocate.addEventListener("click",function(position){
 
-    function getlocation() {}
-    if(navigator.geolocation){ 
+    if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position){
-            a.innerHTML = "Latitude: " + position.coords.latitude
-            b.innerHTML = "Longitude: " + position.coords.longitude
+            let ellat = document.getElementById("lat")
+            let ellong = document.getElementById("long")
+            ellat.innerHTML = "latitude" + position.coords.latitude
+            ellong.innerHTML = "longittude" + position.coords.longitude
         })
     } else {
-        alert("Geolocation is not supported!")
+        alert("geolocation is not suportted")
     }
 })
+
+
+// let elLocate = document.getElementById("btnLocate")
+// elLocate.addEventListener("click",function(){
+    
+//     var a = document.getElementById("demo1");
+//     var b = document.getElementById("demo2");
+
+//     function getlocation() {}
+//     if(navigator.geolocation){ 
+//         navigator.geolocation.getCurrentPosition(function(position){
+//             a.innerHTML = "Latitude: " + position.coords.latitude
+//             b.innerHTML = "Longitude: " + position.coords.longitude
+//         })
+//     } else {
+//         alert("Geolocation is not supported!")
+//     }
+// })
