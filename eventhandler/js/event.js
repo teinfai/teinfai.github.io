@@ -8,6 +8,21 @@ elusername.addEventListener("keyup",function() {
 })
 
 
+function checkPassword() {
+    let eluserpassword = document.getElementById(("userpassword"))
+    let pass_val = eluserpassword.value;
+
+    if (pass_val.length > 5) {
+        alert("Password alert...OK!")
+    } else {
+        alert("Password too short!")
+    }
+}
+
+
+// old way 
+let elpw = document.getElementById("userpassword")
+elpw.onblur = checkPassword
 
 
 
