@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Apps</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+</head>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h5 class="text-white h4">Registration for library</h5>
+            <div class="row">
+                <a class="nav-link" href="index.html"><span style="color:white;">Home</span></a>
+                <a class="nav-link" href="book.html"><span style="color:white;">Registration</span></a>
+                <a class="nav-link " href="list.html"><span style="color:white;">Preview</span></a>
+            </div>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col">
+            <div class="jumbotron">
+                <h1 class="display-4">Welcome to lorem library!</h1>
+                <p class="lead">Please choose and leave down information accordingly</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="username">Name</label>
+                    <input type="text" class="form-control" id="username">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="useremail">Email address</label>
+                    <input type="email" class="form-control" id="useremail" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll share your email with anyone
+                        else.</small>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="book_selection">Book Choice</label>
+                    <select class="form-control" id="book_selection">
+                        <option>BioTechnology</option>
+                        <option>Information Technology</option>
+                        <option>Law</option>
+                        <option>Engineering</option>
+                        <option>Social</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="userremarks">Remark</label>
+                    <textarea class="form-control" id="userremarks" rows="4"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary float-right" id="confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+<script src="js/book.js"></script>
+
+</html>
